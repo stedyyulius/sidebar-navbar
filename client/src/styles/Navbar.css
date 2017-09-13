@@ -1,0 +1,123 @@
+.navbar {
+	background-color: #F5AB35;
+	border: 0;
+	box-shadow: 0 1px 10px rgba(4, 4, 4, 0.45);
+}
+
+.navbar .container-fluid {
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+.navbar .navbar-header {
+	background-color: #2C3E50;
+	width: 300px;
+	padding: 4px 20px;
+	position: relative;
+}
+
+.navbar .navbar-header .navbar-brand,
+.navbar .navbar-header .sidebar-trigger {
+	color: #FFFFFF;
+}
+
+.navbar .navbar-header .navbar-brand {
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+
+.navbar .navbar-header .sidebar-trigger {
+    padding: 15px 20px;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    background-color: #22313F;
+    cursor: pointer;
+    margin-top: -4px;
+    visibility: hidden;
+}
+
+.navbar .navbar-nav li a {
+	color: #FFFFFF;
+	opacity: 0.8;
+	padding: 9px 20px;
+	font-size: 14px;
+}
+
+.navbar .navbar-nav li a.harga-jual,
+.navbar .navbar-nav li a.harga-jual:hover,
+.navbar .navbar-nav li a.harga-jual:active,
+.navbar .navbar-nav li a.harga-jual:focus,
+.navbar .navbar-nav li a.harga-beli,
+.navbar .navbar-nav li a.harga-beli:hover,
+.navbar .navbar-nav li a.harga-beli:active,
+.navbar .navbar-nav li a.harga-beli:focus {
+	opacity: 1;
+	font-size: 12px;
+	text-align: center;
+}
+
+.navbar .navbar-nav li a.harga-naik,
+.navbar .navbar-nav li a.harga-naik:hover,
+.navbar .navbar-nav li a.harga-naik:active,
+.navbar .navbar-nav li a.harga-naik:focus {
+	background-color: #22A7F0;
+}
+
+.navbar .navbar-nav li a.harga-turun,
+.navbar .navbar-nav li a.harga-turun:hover,
+.navbar .navbar-nav li a.harga-turun:active,
+.navbar .navbar-nav li a.harga-turun:focus {
+	background-color: #EC644B;
+}
+
+.navbar .navbar-nav li a .desciption-title {
+	opacity: 0.8;
+	font-size: 12px;
+	text-align: center;
+}
+
+.navbar .navbar-nav li.dropdown ul li a {
+	color: #F5AB35;
+	padding: 8px 20px;
+	background-color: transparent;
+}
+
+.navbar .navbar-nav li.dropdown ul li a:hover,
+.navbar .navbar-nav li.dropdown ul li a:active,
+.navbar .navbar-nav li.dropdown ul li a:focus {
+	color: #FFFFFF;
+	background-color: #f4a11d;
+}
+
+.navbar .navbar-nav>.open>a,
+.navbar .navbar-nav>.open>a:focus,
+.navbar .navbar-nav>.open>a:hover {
+	color: #FFFFFF;
+	background-color: #f4a11d;
+}
+
+.navbar .navbar-nav>.open>a,
+.navbar .navbar-nav li a:hover,
+.navbar .navbar-nav li a:active,
+.navbar .navbar-nav li a:focus {
+	color: #FFFFFF;
+	opacity: 1;
+	background-color: #f4a11d;
+}
+
+@media (max-width: 768px) {
+	.navbar .container-fluid {
+		padding: 0;
+	}
+	.navbar .navbar-header {
+		width: 100%;
+		margin: 0;
+	}
+	.navbar .navbar-nav {
+		display: none;
+	}
+	.navbar .navbar-header .sidebar-trigger {
+		visibility: visible;
+	}
+}
